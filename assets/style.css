@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 700px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px;
+    border-radius: 10px;
+    gap: 25px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.title,
+.subtitle {
+    font-family: 'Young Serif';
+}
+
+:not(.title, .subtitle) {
+    font-family: 'Outfit';
+    color: hsl(24, 5%, 18%);
+}
+
+.subtitle {
+    color: hsl(14, 45%, 36%);
+}
+
+.preparation {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    list-style: inside;
+}
+
+.preparation>h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.preparation li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients,
+.instructions {
+    display: flex;
+    flex-direction: column;
+    list-style: inside;
+    gap: 15px;
+    border-bottom: 1px solid hsla(15, 4%, 18%, 0.281);
+    padding-bottom: 30px;
+}
+
+.ingredients li::marker,
+.instructions li::marker,
+.nutrition strong {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+table {
+    width: 100%;
+    padding: 0 25px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+td {
+    border-bottom: 1px solid hsla(15, 4%, 18%, 0.281);
+    padding: 10px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:780px) {
+    .container {
+        width: 90%;
+        /* Aumenta a largura em dispositivos menores */
+        padding: 15px;
+        /* Reduz o padding para ajustar o conteúdo */
+    }
+}
