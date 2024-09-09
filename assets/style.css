@@ -12,7 +12,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 50px auto;
     width: 700px;
     background-color: hsl(0, 0%, 100%);
     padding: 35px;
@@ -114,9 +114,7 @@ tr:last-child td {
 
 @media(max-width:780px) {
     .container {
-        width: 90%;
-        /* Aumenta a largura em dispositivos menores */
-        padding: 15px;
-        /* Reduz o padding para ajustar o conteúdo */
+        width: 100%;
+        margin: 0;
     }
 }
